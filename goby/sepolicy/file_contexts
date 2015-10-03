@@ -1,0 +1,9 @@
+/system/bin/local_opengl u:object_r:local_opengl_exec:s0
+/system/bin/gsmd u:object_r:gsmd_exec:s0
+/system/bin/vinput u:object_r:vinput_exec:s0
+/system/bin/vinput_seamless u:object_r:vinput_seamless_exec:s0
+/system/bin/local_camera u:object_r:local_camera_exec:s0
+/system/bin/local_gps u:object_r:local_gps_exec:s0
+/system/etc/init.aicVM.sh u:object_r:init_aicvm_exec:s0
+/system/etc/setup_dns.sh u:object_r:dns_exec:s0
+/system/etc/install_packages.sh u:object_r:packages_exec:s0

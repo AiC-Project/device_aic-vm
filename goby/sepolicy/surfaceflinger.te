@@ -1,0 +1,9 @@
+#============= surfaceflinger ==============
+allow surfaceflinger fwmarkd_socket:sock_file write;
+allow surfaceflinger netd:unix_stream_socket connectto;
+allow surfaceflinger port:tcp_socket name_connect;
+allow surfaceflinger self:tcp_socket { write read create setopt connect };
+allow surfaceflinger default_prop:property_service set;
+allow surfaceflinger shell_exec:file { read execute open execute_no_trans };
+allow surfaceflinger self:capability sys_nice;
+

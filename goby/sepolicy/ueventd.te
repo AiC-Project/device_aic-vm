@@ -1,0 +1,5 @@
+#============= ueventd ==============
+allow ueventd init:unix_stream_socket connectto;
+allow ueventd property_socket:sock_file write;
+allow ueventd self:capability sys_module;
+

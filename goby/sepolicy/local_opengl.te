@@ -1,0 +1,5 @@
+type local_opengl, domain;
+type local_opengl_exec, exec_type, file_type;
+
+init_daemon_domain(local_opengl)
+net_domain(local_opengl)

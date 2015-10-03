@@ -1,0 +1,4 @@
+#============= bootanim ==============
+allow bootanim port:tcp_socket name_connect;
+allow bootanim self:tcp_socket { write read create connect setopt };
+

@@ -1,0 +1,9 @@
+type packages, domain;
+type packages_exec, exec_type, file_type;
+
+init_daemon_domain(packages)
+allow packages self:capability dac_override;
+allow packages shell_exec:file read;
+allow packages system_file:file execute_no_trans;
+allow packages vfat:dir search;
+

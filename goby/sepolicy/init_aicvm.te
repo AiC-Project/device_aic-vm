@@ -1,0 +1,24 @@
+type init_aicvm, domain;
+type init_aicvm_exec, exec_type, file_type;
+
+init_daemon_domain(init_aicvm)
+net_domain(init_aicvm)
+allow init self:capability sys_module;
+
+allow init_aicvm default_prop:property_service set;
+allow init_aicvm init:unix_stream_socket connectto;
+allow init_aicvm property_socket:sock_file write;
+allow init_aicvm rootfs:file { execute execute_no_trans };
+allow init_aicvm self:capability { net_admin sys_module dac_override };
+allow init_aicvm self:netlink_route_socket nlmsg_write;
+allow init_aicvm self:packet_socket { write read };
+allow init_aicvm serial_device:chr_file { write open };
+allow init_aicvm shell_exec:file read;
+allow init_aicvm system_file:file execute_no_trans;
+allow init_aicvm system_prop:property_service set;
+allow init_aicvm tty_device:chr_file { write open };
+allow init_aicvm self:capability net_raw;
+allow init_aicvm self:packet_socket { bind create };
+
+
+

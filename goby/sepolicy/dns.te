@@ -1,0 +1,9 @@
+type dns, domain;
+type dns_exec, exec_type, file_type;
+
+init_daemon_domain(dns)
+net_domain(dns)
+allow dns netd_socket:sock_file write;
+allow dns shell_exec:file read;
+allow dns system_file:file execute_no_trans;
+

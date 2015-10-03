@@ -1,0 +1,4 @@
+#============= init ==============
+allow init self:tcp_socket { write getattr setopt read getopt accept listen };
+allow init vfat:dir search;
+

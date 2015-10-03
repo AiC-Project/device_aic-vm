@@ -1,0 +1,6 @@
+type vinput, domain;
+type vinput_exec, exec_type, file_type;
+
+init_daemon_domain(vinput)
+net_domain(vinput)
+allow vinput uhid_device:chr_file { write ioctl open };

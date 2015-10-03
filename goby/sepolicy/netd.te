@@ -1,0 +1,4 @@
+#============= netd ==============
+allow netd init:tcp_socket { read write setopt getopt };
+allow netd surfaceflinger:fd use;
+allow netd surfaceflinger:tcp_socket { read write setopt getopt };

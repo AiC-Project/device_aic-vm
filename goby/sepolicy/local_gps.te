@@ -1,0 +1,8 @@
+type local_gps, domain;
+type local_gps_exec, exec_type, file_type;
+
+init_daemon_domain(local_gps)
+net_domain(local_gps)
+allow local_gps default_prop:property_service set;
+allow local_gps init:unix_stream_socket connectto;
+allow local_gps property_socket:sock_file write;

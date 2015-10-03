@@ -1,0 +1,9 @@
+type vinput_seamless, domain;
+type vinput_seamless_exec, exec_type, file_type;
+
+init_daemon_domain(vinput_seamless)
+net_domain(vinput_seamless)
+allow vinput_seamless input_device:chr_file { read ioctl open };
+allow vinput_seamless uhid_device:chr_file { write ioctl open };
+allow vinput_seamless input_device:dir search;
+
