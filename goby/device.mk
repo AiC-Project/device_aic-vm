@@ -100,7 +100,6 @@ PRODUCT_PACKAGES += \
     GestureBuilder \
     CubeLiveWallpapers \
     aicVM-prop \
-    vmconfig \
     ClipboardProxy \
     vinput \
     vinput_seamless \
@@ -133,21 +132,10 @@ PRODUCT_PACKAGES += \
     local_opengl \
     Launcher3 \
     camera.goby \
-	camera.goldfish.jpeg \
+    camera.goldfish.jpeg \
     local_camera \
     wpa_supplicant \
     v86d \
     LegacyCamera
-#    Superuser \
-
-#    libGLESv1_CM \
-    librenderControl_enc \
-    \
-    libGLESv2_enc \
-    libOpenglSystemCommon \
-    libGLESv2 \
-    libGLESv1_enc \
-    gralloc.goldfish \
-
 
 $(call inherit-product-if-exists,frameworks/base/build/tablet-dalvik-heap.mk)
